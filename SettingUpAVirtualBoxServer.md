@@ -51,5 +51,4 @@ The end result of these instructions will be a cluster of three servers running 
     1. Eject the CD. (May need to force unmount)
   12. Restart the machine
 5. Log in.
-6. run `apt-get update; apt-get install -y git;`
-7. 
+6. run `apt-get update; apt-get install -y openjdk-7-jdk;`
