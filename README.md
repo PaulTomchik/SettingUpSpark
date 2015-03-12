@@ -63,11 +63,11 @@ The end result of these instructions will be a cluster of three servers running 
   1. Right click SparkMaster and select *Clone*.
   2. Name the clone *SparkSlave1*
   3. Check the reinitialize MACs box.
-  4. Click through the defaults.  
+  4. Click through the defaults until done.  
   5. Right click SparkMaster and select *Clone*.
   6. Name the clone *SparkSlave2*
   7. Check the reinitialize MACs box.
-  8. Click through the defaults.
+  8. Click through the defaults until done.
 7. Start *SparkMaster* and run:
   1. `cd SettingUpSpark`
   2. `./ConfigureMaster`
