@@ -3,4 +3,4 @@ sed '/# - SPARK_MASTER_IP.*$/a export SPARK_MASTER_IP=192.168.56.110' ~/opt/spar
 
 printf "sparkslave1\nsparkslave2" >> ~/opt/spark/conf/slaves
 
-cp mastersshconfig ~/.ssh/config
+cp masterSSHconfig ~/.ssh/config
