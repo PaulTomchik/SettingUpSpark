@@ -37,9 +37,9 @@ The end result of these instructions will be a cluster of three servers running 
   1. Choose Install
   2. 'Enter' through the defaults until you get to *Configure the Network.*
     1. Select *eth1*
-  3. Name the server master.
+  3. Name the server spark.
   4. 'Enter' through the defaults.
-  5. Set username to 'master' and pick a password.
+  5. Set username to 'spark' and pick a password.
   6. 'Enter' through the defaults.
   7. Confirm disk partitioning.
   8. Choose no automatic updates. (Run `sudo apt-get update; sudo apt-get -y upgrade;` to update.)
@@ -54,7 +54,7 @@ The end result of these instructions will be a cluster of three servers running 
   1. `apt-get update; apt-get install -y git openjdk-7-jdk;`
   2. `git clone https://github.com/PaulTomchik/SettingUpSpark.git`
   3. `cd SettingUpSpark`
-  4. `chmod +x InstallSpark.sh ConfigureNetworkInterfaces.sh CreateSSHKey.sh`
+  4. `chmod +x InstallSpark.sh CreateSSHKey.sh ConfigureNetworkInterfaces.sh`
   5. `./InstallSpark.sh`
   6. `./CreateSSHKey.sh`
   7. `sudo ./ConfigureNetworkInterfaces.sh`
@@ -68,6 +68,10 @@ The end result of these instructions will be a cluster of three servers running 
   6. Name the clone *SparkSlave2*
   7. Check the reinitialize MACs box.
   8. Click through the defaults.
+7. Start *SparkMaster* and run:
+  1. `cd SettingUpSpark`
+  2. `./ConfigureMaster`
+  3. `sudo halt -p`
 7. Start *SparkSlave1* and run:
   1. `cd SettingUpSpark`
   2. `./ConfigureSlave1.sh`
@@ -78,3 +82,5 @@ The end result of these instructions will be a cluster of three servers running 
   3. `sudo halt -p`
 
 ##The Spark cluster should now be good to go!
+
+9. Fire up all three virtual machines.
