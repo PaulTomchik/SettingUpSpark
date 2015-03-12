@@ -74,11 +74,11 @@ The end result of these instructions will be a cluster of three servers running 
   3. `sudo halt -p`
 7. Start *SparkSlave1* and run:
   1. `cd SettingUpSpark`
-  2. `./ConfigureSlave1.sh`
+  2. `sudo ./ConfigureSlave1.sh`
   3. `sudo halt -p`
 8. Start *SparkSlave2* and run:
   1. `cd SettingUpSpark`
-  2. `./ConfigureSlave2.sh`
+  2. `sudo ./ConfigureSlave2.sh`
   3. `sudo halt -p`
 
 ##The Spark cluster should now be good to go!
