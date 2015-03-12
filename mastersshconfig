@@ -1,0 +1,7 @@
+Host sparkslave1
+	User paul
+	HostName 192.168.56.111
+
+Host sparkslave2
+	User paul
+	HostName 192.168.56.112
