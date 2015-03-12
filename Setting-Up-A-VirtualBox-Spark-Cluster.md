@@ -37,9 +37,9 @@ The end result of these instructions will be a cluster of three servers running 
   1. Choose Install
   2. 'Enter' through the defaults until you get to *Configure the Network.*
     1. Select *eth1*
-  3. Name the server spark.
+  3. Name the server *master*.
   4. 'Enter' through the defaults.
-  5. Set username to 'spark' and pick a password.
+  5. Set username to *spark* and pick a password.
   6. 'Enter' through the defaults.
   7. Confirm disk partitioning.
   8. Choose no automatic updates. (Run `sudo apt-get update; sudo apt-get -y upgrade;` to update.)
@@ -48,7 +48,7 @@ The end result of these instructions will be a cluster of three servers running 
     2. OpenSSH Server
   10. 'Enter' through the defaults until prompt to restart the system.
   11. Click 'Devices' on the VirtualBox window.
-    1. Eject the CD. (May need to 'force unmount.')
+    1. Eject the virtual CD. (May need to 'force unmount.')
   12. Restart the machine
 5. Log in and run:
   1. `apt-get update; apt-get install -y git openjdk-7-jdk;`
