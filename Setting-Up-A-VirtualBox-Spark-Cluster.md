@@ -7,7 +7,7 @@ The end result of these instructions will be a cluster of three servers running 
 2. Download [Ubuntu 14.04 Minimal](https://help.ubuntu.com/community/Installation/MinimalCD). (I haven't tried the 32 bit with Spark).
 3. Open VirtualBox:
   1. Click *New*
-    1. Name the VM SparkMaster.
+    1. Name the VM *SparkMaster*.
     2. Select Linux and the architecture that you downloaded in step 2.
     3. Give the VM a decent amount of memory. Remember, however, that you will be running multiple instances. On my machine with 4G of RAM, I allocated 1G.
     4. Select the defaults until done.
@@ -40,18 +40,18 @@ The end result of these instructions will be a cluster of three servers running 
   3. Name the server *master*.
   4. 'Enter' through the defaults.
   5. Set username to *spark* and pick a password.
-  6. 'Enter' through the defaults.
-  7. Confirm disk partitioning.
+  6. 'Enter' through the defaults until you reach *Partition disks*. (The screen may go blank for a while during one stage.)
+    1. Select yes.
   8. Choose no automatic updates. (Run `sudo apt-get update; sudo apt-get -y upgrade;` to update.)
   9. In the *Software Selection* menu, select
     1. Basic Ubuntu Server
     2. OpenSSH Server
-  10. 'Enter' through the defaults until prompt to restart the system.
+  10. 'Enter' through the defaults until you reach *Finish the installation*.
   11. Click 'Devices' on the VirtualBox window.
     1. Eject the virtual CD. (May need to 'force unmount.')
   12. Restart the machine
 5. Log in and run:
-  1. `apt-get update; apt-get install -y git openjdk-7-jdk;`
+  1. `sudo apt-get update; sudo apt-get install -y git openjdk-7-jdk;`
   2. `git clone https://github.com/PaulTomchik/SettingUpSpark.git`
   3. `cd SettingUpSpark`
   4. `chmod +x ConfigureMaster.sh ConfigureNetworkInterfaces.sh ConfigureSlave1.sh ConfigureSlave2.sh CreateSSHKey.sh InstallSpark.sh`
@@ -81,6 +81,8 @@ The end result of these instructions will be a cluster of three servers running 
   2. `sudo ./ConfigureSlave2.sh`
   3. `sudo halt -p`
 
-##The Spark cluster should now be good to go!
+##The Spark cluster should now be good to go! 
 
 9. Fire up all three virtual machines.
+10. Run `start-all` on the master to start up the cluster.
+11. Run `stop-all` to shut it down.
