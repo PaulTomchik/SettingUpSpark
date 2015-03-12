@@ -58,6 +58,7 @@ The end result of these instructions will be a cluster of three servers running 
   5. `./InstallSpark.sh`
   6. `./CreateSSHKey.sh`
   7. `sudo ./ConfigureNetworkInterfaces.sh`
+  8. ./ConfigureMaster.sh
   8. `sudo halt -p` 
 6. In VirtualBox
   1. Right click SparkMaster and select *Clone*.
