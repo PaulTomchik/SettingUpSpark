@@ -54,7 +54,7 @@ The end result of these instructions will be a cluster of three servers running 
   1. `apt-get update; apt-get install -y git openjdk-7-jdk;`
   2. `git clone https://github.com/PaulTomchik/SettingUpSpark.git`
   3. `cd SettingUpSpark`
-  4. `chmod +x InstallSpark.sh CreateSSHKey.sh ConfigureNetworkInterfaces.sh`
+  4. `chmod +x ConfigureMaster.sh ConfigureNetworkInterfaces.sh ConfigureSlave1.sh ConfigureSlave2.sh CreateSSHKey.sh InstallSpark.sh`
   5. `./InstallSpark.sh`
   6. `./CreateSSHKey.sh`
   7. `sudo ./ConfigureNetworkInterfaces.sh`
