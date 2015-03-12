@@ -1,4 +1,4 @@
-#Setting up a Virtual Box Ubuntu server.
+#Setting up a Virtual Box Spark Cluster.
 
 The end result of these instructions will be a cluster of three servers running in VirtualBox, with 1 master and 2 workers.
 
