@@ -4,11 +4,11 @@ The end result of these instructions will be a cluster of three servers running 
 
 ###Instructions
 1. Install VirtualBox
-2. Download [Ubuntu 14.04 Minimal](https://help.ubuntu.com/community/Installation/MinimalCD)
+2. Download [Ubuntu 14.04 Minimal](https://help.ubuntu.com/community/Installation/MinimalCD). (I haven't tried the 32 bit with Spark).
 3. Open VirtualBox:
   1. Click *New*
     1. Name the VM SparkMaster.
-    2. Select Linux and the architecture (I haven't tried the 32 bit with Spark).
+    2. Select Linux and the architecture that you downloaded in step 2.
     3. Give the VM a decent amount of memory. Remember, however, that you will be running multiple instances. On my machine with 4G of RAM, I allocated 1G.
     4. Select the defaults until done.
   2. Under *File*
