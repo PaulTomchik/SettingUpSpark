@@ -1,4 +1,7 @@
-mv /etc/network/interfaces /etc/network/interfaces.defaults
+if [ ! -f /etc/network/interfaces.defaults ]; then
+    mv /etc/network/interfaces /etc/network/interfaces.defaults
+fi
+
 
 cp ./interfaces /etc/network/interfaces
 chown root /etc/network/interfaces
