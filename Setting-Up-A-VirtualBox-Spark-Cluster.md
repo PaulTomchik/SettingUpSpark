@@ -18,7 +18,7 @@ The end result of these instructions will be a cluster of three servers running 
           1. Click the *+* icon.
           2. Click OK
   2. Click *Settings*
-    1. Under *System*, then deselect *Floppy Disk*.
+    1. Under *System*, deselect *Floppy Disk*.
     2. Under *Storage*
       1. Click the CD icon
       2. Under Attributes, click that CD icon
