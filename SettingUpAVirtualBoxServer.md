@@ -50,5 +50,11 @@ The end result of these instructions will be a cluster of three servers running 
   11. Click 'Devices' on the VirtualBox window.
     1. Eject the CD. (May need to force unmount)
   12. Restart the machine
-5. Log in.
-6. run `apt-get update; apt-get install -y openjdk-7-jdk;`
+5. Log in and run:
+  1. `apt-get update; apt-get install -y git openjdk-7-jdk;`
+  2. `git clone https://github.com/PaulTomchik/SettingUpSpark.git`
+  3. `cd SettingUpSpark`
+  4. `chmod +x InstallSpark.sh`
+  5. `chmod +x ConfigureNetworkInterfaces.sh`
+  6. `./InstallSpark.sh`
+  7. `sudo ./ConfigureNetworkInterfaces.sh`
