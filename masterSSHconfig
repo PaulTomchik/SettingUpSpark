@@ -1,7 +1,7 @@
-Host sparkslave1
+Host slave1
 	User spark
 	HostName 192.168.56.111
 
-Host sparkslave2
+Host slave2
 	User spark
 	HostName 192.168.56.112
