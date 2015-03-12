@@ -54,10 +54,10 @@ The end result of these instructions will be a cluster of three servers running 
   1. `apt-get update; apt-get install -y git openjdk-7-jdk;`
   2. `git clone https://github.com/PaulTomchik/SettingUpSpark.git`
   3. `cd SettingUpSpark`
-  4. `chmod +x InstallSpark.sh ConfigureNetworkInterfaces.sh`
+  4. `chmod +x InstallSpark.sh ConfigureNetworkInterfaces.sh CreateSSHKey.sh`
   5. `./InstallSpark.sh`
-  6. `sudo ./ConfigureNetworkInterfaces.sh`
-  7. ``
+  6. `./CreateSSHKey.sh`
+  7. `sudo ./ConfigureNetworkInterfaces.sh`
   8. `sudo halt -p` 
 6. In VirtualBox
   1. Right click SparkMaster and select *Clone*.
@@ -77,3 +77,4 @@ The end result of these instructions will be a cluster of three servers running 
   2. `./ConfigureSlave2.sh`
   3. `sudo halt -p`
 
+##The Spark cluster should now be good to go!
