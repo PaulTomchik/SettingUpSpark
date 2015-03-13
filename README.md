@@ -1,4 +1,8 @@
-#Setting up a Virtual Box Spark Cluster.
+#This Setup does **NOT** include HDFS or Hadoop.#
+
+
+
+##Setting up a Spark Standalone Cluster in VirtualBox.
 
 The end result of these instructions will be a cluster of three servers running in VirtualBox, with 1 master and 2 workers.
 
