@@ -1,4 +1,4 @@
-#This Setup does **NOT** include HDFS or Hadoop.#
+#Does **NOT** include HDFS or Hadoop.#
 
 
 
